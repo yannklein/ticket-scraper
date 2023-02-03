@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Le Wagon code tournament</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text style=%22fill:rgb(255,255,255)%22 y=%22.9em%22 font-size=%2290%22>👾</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="banner" style="background-image:url(https://media.giphy.com/media/9gISqB3tncMmY/giphy.gif)">
+      <div class="overlay">
+        <img id="logo" src="images/nest.png" alt="">
+      <h1>Le Wagon code tournament 👾</h1>
+      </div>
+    </div>
+
+    <div class="cards">
+    <% student_groups.each do |student_group| %>
+      <div class="card">
+        <input value="" placeholder="Your team name">
+        <div class="students">
+        <%  student_group.each do |student| %>
+          <div>
+            <img id="<%= student["name"] %>" src="<%= student["img"] %>" alt="">
+            <p><%= student["name"] %></p>
+          </div>
+        <% end %>
+        </div>
+      </div>
+    <% end %>
+    </div>
+
+    <div class="group">
+      <h2>For complains, mail us:</h2>
+      <div>
+        <input name="email" id="email" value="doug@lewagon.org" />
+        <input type="submit" value="Mail Doug">
+      </div>
+    </div>
+
+    <script src="dist/main.js"></script>
+  </body>
+</html>

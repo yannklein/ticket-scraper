@@ -1,0 +1,25 @@
+.banner {
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner .overlay {
+  padding: 16px 0;
+  /* background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.5)); */
+}
+
+.banner #logo {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 36px white;
+  filter: hue-rotate(-97deg);
+}
+
+.banner h1 {
+  margin-bottom: 0px;
+  margin-top: 16px;
+  text-shadow: 0 0 8px white;
+  font-size: 36px;
+}
